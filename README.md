@@ -1,2 +1,2 @@
-# national-gallery-model
-HIAA0860 Contemporary Architecture Final Project Model
+# Interactive 3D model of I.M. Pei's National Gallery
+
