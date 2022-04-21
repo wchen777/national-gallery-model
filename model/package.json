@@ -6,6 +6,7 @@
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@react-three/cannon": "^6.3.0",
     "@react-three/drei": "^9.4.3",
     "@react-three/fiber": "^8.0.12",
     "@splinetool/react-spline": "^2.0.0",
@@ -22,7 +23,6 @@
     "react-scripts": "5.0.1",
     "react-spline": "^1.2.1",
     "react-three": "^0.9.7",
-    "react-three-fiber": "^6.0.13",
     "three": "^0.139.2",
     "three-stdlib": "^2.9.1",
     "web-vitals": "^0.2.4"
