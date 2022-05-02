@@ -8,6 +8,7 @@ function actionByKey(key) {
     KeyA: 'moveLeft',
     KeyD: 'moveRight',
     Space: 'jump',
+    ShiftLeft: 'fall',
   };
   return keys[key];
 }
@@ -30,6 +31,7 @@ export const useKeyboardControls = () => {
     moveLeft: false,
     moveRight: false,
     jump: false,
+    fall: false,
   });
 
   //   const [setTexture] = useStore((state) => [state.setTexture]);

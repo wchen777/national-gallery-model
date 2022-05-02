@@ -139,12 +139,12 @@ export default function MainThree() {
       {/* <pointLight castShadow intensity={0.7} position={[100, 100, 100]} /> */}
       <Physics gravity={[0, -30, 0]}>
         {/* <Box /> */}
-        <CameraView position={[0, 5, 10]} />
         <PlaneRoadsLeft />
         <PlaneRoadsRight />
         <PlaneGrassRight />
         <PlaneGrassLeft />
         <PlaneCourtyard />
+        <CameraView position={[0, 6, 10]} />
         {/* <Plane /> */}
       </Physics>
 
