@@ -62,15 +62,15 @@ export const CameraView = props => {
     //   currPos.z += velocity.current[2] * SCALE;
     // } else {
     currPos.x += direction.x * SCALE;
-    currPos.y = Math.max(currPos.y + Math.max(velocity.current[1], 0), 6);
+    currPos.y = Math.max(currPos.y + Math.max(velocity.current[1], 0), 7);
     currPos.z += direction.z * SCALE;
 
     if (jump && Math.abs(velocity.current[1].toFixed(2)) < 0.05) {
-      currPos.y += 2;
+      currPos.y += 1;
     }
 
     if (fall && Math.abs(velocity.current[1].toFixed(2)) < 0.05) {
-      currPos.y -= 2;
+      currPos.y -= 1;
     }
     // }
 
