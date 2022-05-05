@@ -9,6 +9,8 @@
     "@react-three/cannon": "^6.3.0",
     "@react-three/drei": "^9.4.3",
     "@react-three/fiber": "^8.0.12",
+    "@splinetool/loader": "^0.9.40",
+    "@splinetool/r3f-spline": "^1.0.1",
     "@splinetool/react-spline": "^2.0.0",
     "@splinetool/runtime": "^0.9.33",
     "@testing-library/jest-dom": "^5.16.4",

@@ -21,6 +21,11 @@ export default function Main() {
     //     <Spline scene="https://draft.spline.design/J2lwgPvHdbT26xMX/scene.spline" />
     //   )}
     // </>
-    <MainThree />
+    <>
+      {/* <div className="toggle">
+        <Button variant="solid">Toggle Demo</Button>
+      </div> */}
+      <MainThree />
+    </>
   );
 }
