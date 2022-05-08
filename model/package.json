@@ -2,7 +2,7 @@
   "name": "model",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://wchen777.github.io/national-gallery-model",
   "dependencies": {
     "@chakra-ui/react": "^1.8.8",
     "@emotion/react": "^11.9.0",
