@@ -3,3 +3,41 @@
   top: 5vh;
   left: 8vw;
 }
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 16px solid #c8c7c7; /* Light grey */
+    border-top: 16px solid #73bec8; /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* overflow: hidden; */
+    background: #548D95;
+  }

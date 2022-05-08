@@ -8,6 +8,7 @@ import './MainThree.scss';
 import { CameraView } from '../components/camera/CameraView';
 import Stage from '../components/environment/Stage';
 import Centerpiece from '../components/environment/Centerpiece';
+import Building from '../components/building/Building';
 
 // const Box = () => {
 //   const [ref] = useBox(() => ({
@@ -41,7 +42,8 @@ export default function MainThree() {
 
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 15, 10]} angle={0.3} />
-      <Centerpiece scale={[0.006, 0.006, 0.006]} position={[0, 1, 30]} />
+      {/* <Centerpiece scale={[0.006, 0.006, 0.006]} position={[0, 1, 30]} /> */}
+      <Building position={[0, 1, 0]} scale={[0.2, 0.2, 0.2]} />
       {/* {render && (
         <Centerpiece scale={[0.005, 0.005, 0.005]} position={[0, 1, 30]} />
       )} */}

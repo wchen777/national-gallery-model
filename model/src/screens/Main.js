@@ -1,31 +1,50 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 import { Button } from '@chakra-ui/react';
 import './Main.scss';
-import MainThree from './MainThree';
 
 export default function Main() {
-  const [displayDemo, setDisplayDemo] = useState(false);
+  const [night, setNight] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  const loadingTimeout = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  };
+
+  useEffect(() => {
+    loadingTimeout();
+  }, []);
+
+  const handleToggle = () => {
+    setNight(!night);
+    loadingTimeout();
+  };
 
   return (
-    // <>
-    //   <div className="toggle">
-    //     <Button variant="solid" onClick={() => setDisplayDemo(!displayDemo)}>
-    //       Toggle Demo
-    //     </Button>
-    //   </div>
-
-    //   {displayDemo ? (
-    //     <Spline scene="https://draft.spline.design/hdPoj9fVJlty5LH4/scene.spline" />
-    //   ) : (
-    //     <Spline scene="https://draft.spline.design/J2lwgPvHdbT26xMX/scene.spline" />
-    //   )}
-    // </>
     <>
-      {/* <div className="toggle">
-        <Button variant="solid">Toggle Demo</Button>
-      </div> */}
-      <MainThree />
+      <div className="toggle">
+        <Button variant="solid" onClick={() => handleToggle()}>
+          Toggle {night ? 'Daytime' : 'Nighttime'}
+        </Button>
+      </div>
+
+      {loading && <div class="loader"></div>}
+
+      {night ? (
+        <Spline scene="https://prod.spline.design/VoZTNIwiZ09rqvpr/scene.splinecode" /> // night
+      ) : (
+        <Spline scene="https://prod.spline.design/q3SrPhJqc-P8bApm/scene.splinecode" /> // day
+      )}
     </>
+    // <>
+    //   {/* <div className="toggle">
+    //     <Button variant="solid">Toggle Demo</Button>
+    //   </div> */}
+    //   <MainThree />
+    //   {/* MAIN THREE IS DEPCRECATED? */}
+    // </>
   );
 }
