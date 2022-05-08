@@ -1,2 +1,1 @@
-# Interactive 3D model of I.M. Pei's National Gallery
-
+# Interactive 3D model of I.M. Pei's National Gallery of Art
