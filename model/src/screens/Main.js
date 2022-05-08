@@ -4,7 +4,6 @@ import { Button } from '@chakra-ui/react';
 import './Main.scss';
 
 export default function Main() {
-  //   const [night, setNight] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const loadingTimeout = () => {
@@ -22,8 +21,6 @@ export default function Main() {
     const night = window.localStorage.getItem('state') === 'night';
     window.localStorage.setItem('state', !night ? 'night' : 'day');
     window.location.reload();
-    // setNight(!night);
-    // loadingTimeout();
   };
 
   return (
